@@ -21,9 +21,7 @@ public class RpcHelper {
 		out.close();
 	}
 
-	
-	
-	// Writes a JSONArray to http response.
+	// Writes a JSONArray to handle Http response.
 	public static void writeJsonObject(HttpServletResponse response, JSONObject obj) throws IOException {
 		PrintWriter out = response.getWriter();	
 		response.setContentType("application/json");
